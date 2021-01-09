@@ -1,0 +1,92 @@
+.main-title {
+    text-align: center;
+}
+
+.logo-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-entreprise {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(168, 168, 168);
+    height: 400px;
+    margin-top: 125px;
+}
+
+.texte-image-entreprise {
+    margin-top: 165px;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parcours-pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    margin-top: 125px;
+    background-color: rgb(128, 128, 128);
+}
+
+.parcours-pro-title {
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+}
+
+.parcours-pro-para {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 125px;
+    background-color: rgb(156, 156, 156);
+    height: 250px;
+}
+
+.footer-contenu {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-image-name {
+    display: flex;
+}
+
+.image-name {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card{
+    margin-left: 80px;
+margin-top: 125px;
+}
+.right{
+display: flex;
+flex-direction: row-reverse;
+margin-right: 80px;
+}
+.form{
+
+    margin-top: 50px;
+}
+
+.form-group{
+    margin-left: 25px;
+}
+
+.message{
+margin-left: 11px;
+
+}
