@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-bottom: 25px;
 }
 
 .nav-mobile {
@@ -39,6 +40,7 @@
 }
 
 .moi {
+    text-align: center;
     font-size: 10px;
     background-color: rgb(144, 144, 144);
     margin-top: 30px;
@@ -51,26 +53,154 @@
 }
 
 /*PRESENTATION--------------------------------------------------------------------------*/
-.presentation{
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 300px;
+    background: #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container-onglets{
+    margin-top: 25px;
+    background: #f1f1f1;
+    width: 100%;
+    height: 30%;
     display: flex;
-    flex-direction: row;
+    border-bottom: 1px solid #333;
 }
-.bouton{
-    margin-top: 35px;
-    margin-right: 35px  ;
-    width: 100px;
+.onglets {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
 }
-.para-pres{
+.onglets:not(:nth-child(3)) {
+    border-right: 1px solid #333;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.contenu h3 {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.contenu hr {
+    width: 30%;
+    height: 2px;
+    margin-left: 20px;
+    background: #000;
+    border: none;
+}
+.contenu p {
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Anim */
+
+.active {
+    background: midnightblue;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.services {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    height: 600px;
+    background-color: rgb(180, 180, 180);
+}
+
+.services-article {
+    border-radius: 30px;
+    width: 1000px;
+    margin-bottom: 10px;
+    margin: 10px;
+    height: 400px;
+    background-color: rgb(139, 139, 139);
+}
+
+.services-article-title {
+    text-transform: uppercase;
+    margin-top: 5px;
+    text-align: center;
     font-size: 10px;
-    height: 100px;
 }
+
+.services-article-para {
+    text-align: center;
+    font-size: 8.6px;
+}
+
+.all-article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-title {
+    margin-bottom: 45px;
+    text-decoration: underline;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+.photo{
+    margin-bottom: 25px ;
+}
+
 /* TEMOIGNAGES---------------------------------------------- */
 
 .temoignages {
     border-radius: 30px;
     background-color: rgb(141, 141, 141);
     height: 800px;
-    margin-top: 20px;
+    margin-top: 400px;
 }
 
 .temoignages-title {
@@ -170,8 +300,8 @@
     .temoignages {
         border-radius: 30px;
         background-color: rgb(141, 141, 141);
-        height: 1500px;
-        margin-top: 80px;
+        height: 1000px;
+        margin-top: 400px;
     }
     .temoignages-title {
         padding-top: 20px;
@@ -252,8 +382,8 @@
     .temoignages {
         border-radius: 30px;
         background-color: rgb(141, 141, 141);
-        height: 2200px;
-        margin-top: 100px;
+        height: 1400px;
+        margin-top: 500px;
     }
     .temoignages-title {
         padding-top: 20px;
@@ -350,12 +480,111 @@
         text-transform: uppercase;
         text-align: center;
     }
+
+    /* PRESENTATION--------------------------------------------------------------- */
+    *, ::before, ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        background: #f1f1f1;
+        
+    }
+    
+    .container {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: auto;
+        height: 300px;
+        background: #f1f1f1;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .container-onglets{
+        margin-top: 25px;
+        background: #f1f1f1;
+        width: 1000px;
+        height: 30%;
+        display: flex;
+        border-bottom: 1px solid #333;
+    }
+    .onglets {
+        width: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: center;
+    }
+    .onglets:not(:nth-child(3)) {
+        border-right: 1px solid #333;
+    }
+    
+    .contenu {
+        height: 70%;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+    .contenu h3 {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 25px;
+    }
+    .contenu hr {
+        width: 30%;
+        height: 2px;
+        margin-left: 20px;
+        background: #000;
+        border: none;
+    }
+    .contenu p {
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    /* Anim */
+    
+    .active {
+        background: midnightblue;
+        color: #f1f1f1;
+        transition: all 0.3s ease;
+    }
+    
+    .activeContenu {
+        animation: fade 0.5s forwards;
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+
+
+
+
+
+
     /* TEMOIGNAGES---------------------------------------------------------------------- */
     .temoignages {
         border-radius: 30px;
         background-color: rgb(141, 141, 141);
-        height: 2750px;
-        margin-top: 150px;
+        height:1800px;
+        margin-top: 700px;
     }
     .temoignages-title {
         padding-top: 20px;
@@ -449,12 +678,104 @@
     .about {
         font-size: 20px;
     }
+    /*PRESENTATION--------------------------------------------------------------------------*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f1f1f1;
+    
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 300px;
+    background: #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.container-onglets{
+    margin-top: 25px;
+    background: #f1f1f1;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+.onglets {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.onglets:not(:nth-child(3)) {
+    border-right: 1px solid #333;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.contenu h3 {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.contenu hr {
+    width: 30%;
+    height: 2px;
+    margin-left: 20px;
+    background: #000;
+    border: none;
+}
+.contenu p {
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Anim */
+
+.active {
+    background: midnightblue;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.activeContenu {
+    animation: fade 0.5s forwards;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
     /* TEMOIGNAGES---------------------------------------------------------------------- */
     .temoignages {
         border-radius: 30px;
         background-color: rgb(141, 141, 141);
-        height: 3200px;
-        margin-top: 150px;
+        height: 1800px;
+        margin-top: 700px;
     }
     .temoignages-title {
         padding-top: 20px;
